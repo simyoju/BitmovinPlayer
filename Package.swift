@@ -6,8 +6,7 @@ import PackageDescription
 let package = Package(
     name: "BitmovinPlayer",
     platforms: [
-        .iOS(.v14),
-        .tvOS(.v14)
+        .iOS(.v13)
     ],
     products: [
         .library(
@@ -16,7 +15,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/bitmovin/player-ios-core.git", "3.43.1-a.4"..."3.43.1"),
+        .package(url: "https://github.com/bitmovin/player-ios-core.git", "3.27.0"..<"3.28.0"),
         .package(url: "https://github.com/bitmovin/bitmovin-analytics-collector-ios.git", from: "3.0.0"),
     ],
     targets: [
